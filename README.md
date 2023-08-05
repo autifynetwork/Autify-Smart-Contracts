@@ -1,6 +1,6 @@
 # Autify Network Diamond
 
-The **Autify Network Diamond** is an implementation that leverages the [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
+The [**Autify Network Diamond**](https://autifynetwork.com/exploring-erc-2535-the-diamond-standard-for-smart-contracts/)  is an implementation that leverages the [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
 
 The standard loupe functions have been gas-optimized in this implementation and can be called in on-chain transactions.
 
