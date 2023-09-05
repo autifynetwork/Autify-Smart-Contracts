@@ -1,8 +1,24 @@
 # Autify Network Diamond
 
-The [**Autify Network Diamond**](https://autifynetwork.com/exploring-erc-2535-the-diamond-standard-for-smart-contracts/)  is an implementation that leverages the [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
+The [**Autify Network Diamond**](https://autifynetwork.com/exploring-erc-2535-the-diamond-standard-for-smart-contracts/) is an implementation that leverages the [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
 
 The standard loupe functions have been gas-optimized in this implementation and can be called in on-chain transactions.
+
+**Features & Types of ERC-2535**
+
+The Diamond Standard boasts several crucial features, including:
+
+* A single gateway for carrying out proxy calls to n number of implementation contracts
+* The capability to upgrade single or multiple smart contracts atomically
+* No limit on the number of implementation contracts that can be added to the Diamond
+* A comprehensive record of all upgrades executed on the Diamond
+* Reduced gas costs by decreasing the number of external function calls
+
+  There are different types of Diamonds, such as:
+
+* Upgradeable Diamond: A mutable contract that can be upgraded
+* Finished Diamond: An immutable contract due to the upgradeability feature being removed
+* Single Cut Diamond: An immutable contract that can no longer be upgraded
 
 **Note:** The loupe functions in DiamondLoupeFacet.sol MUST be added to the diamond and are required by the EIP-2535 Diamonds standard.
 
